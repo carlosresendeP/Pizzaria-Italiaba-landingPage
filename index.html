@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Italiana  - Autêntica Pizza Italiana</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/Logo.png" alt="Pizza Itália Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-custom ms-lg-3" href="#order">Peça Agora</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+
+            <div class="hero-hightlight-colors">
+                <div class="color-green">
+                </div>    
+                <div class="color-white">
+                </div>
+                <div class="color-red">
+                </div>    
+
+            </div>
+
+            </div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Autêntica Pizza Italiana</h1>
+                    <p>Descubra o verdadeiro sabor da Itália em cada mordida de nossas deliciosas pizzas artesanais.</p>
+                    <a href="#menu" class="btn btn-custom">Ver Menu</a>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nossa História</h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="about-img fade-in">
+                            <img src="./assets/img/Local.png" alt="Pizza Itália História" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content fade-in">
+                            <h3>Tradição Italiana desde 1995</h3>
+                            <p>Fundada pelo Chef Marco Rossi, a Pizza Itália nasceu da paixão pela autêntica culinária italiana. Utilizando receitas tradicionais passadas de geração em geração, nossa missão é proporcionar a melhor experiência gastronômica italiana fora da Itália.</p>
+                            <p>Todos os nossos ingredientes são cuidadosamente selecionados para garantir frescor e qualidade excepcionais. Nossa massa é preparada diariamente e fermentada por 48 horas, resultando em uma textura perfeita: crocante por fora e macia por dentro.</p>
+                            <a href="#menu" class="btn btn-custom">Descubra Nosso Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="text-center fade-in">
+                            <div class="ingredient-icon mb-3">
+                                <i class="fas fa-wheat-awn"></i>
+                            </div>
+                            <h4>Ingredientes Premium</h4>
+                            <p>Utilizamos apenas os melhores ingredientes importados da Itália e produtos frescos locais.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="text-center fade-in">
+                            <div class="ingredient-icon mb-3">
+                                <i class="fas fa-fire-flame-curved"></i>
+                            </div>
+                            <h4>Forno a Lenha</h4>
+                            <p>Nossas pizzas são assadas em forno a lenha tradicional, garantindo sabor autêntico.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center fade-in">
+                            <div class="ingredient-icon mb-3">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h4>Chefs Especializados</h4>
+                            <p>Nossa equipe de pizzaiolos foi treinada na Itália para oferecer a verdadeira culinária italiana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nosso Menu</h2>
+                </div>
+                <ul class="nav nav-pills justify-content-center mb-5" id="menuTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pizzas-tab" data-bs-toggle="pill" data-bs-target="#pizzas" type="button" role="tab" aria-controls="pizzas" aria-selected="true">Pizzas</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="entradas-tab" data-bs-toggle="pill" data-bs-target="#entradas" type="button" role="tab" aria-controls="entradas" aria-selected="false">Entradas</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="bebidas-tab" data-bs-toggle="pill" data-bs-target="#bebidas" type="button" role="tab" aria-controls="bebidas" aria-selected="false">Bebidas</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="sobremesas-tab" data-bs-toggle="pill" data-bs-target="#sobremesas" type="button" role="tab" aria-controls="sobremesas" aria-selected="false">Sobremesas</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="menuTabsContent">
+                    <div class="tab-pane fade show active" id="pizzas" role="tabpanel" aria-labelledby="pizzas-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item fade-in">
+                                    <div class="menu-img">
+                                        <img src="assets/img/pizza-Margherita.jpg" alt="Margherita">
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4>Margherita</h4>
+                                            <span class="price">R$ 45,90</span>
+                                        </div>
+                                        <p>Molho de tomate, mussarela de búfala, manjericão fresco e azeite extra virgem.</p>
+                                        <div class="menu-tags">
+                                            <span>Clássica</span>
+                                            <span>Vegetariana</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item fade-in">
+                                    <div class="menu-img">
+                                        <img src="assets/img/pizza-Pepperoni.jpg" alt="Pepperoni">
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4>Pepperoni</h4>
+                                            <span class="price">R$ 52,90</span>
+                                        </div>
+                                        <p>Molho de tomate, mussarela, pepperoni fatiado e orégano.</p>
+                                        <div class="menu-tags">
+                                            <span>Popular</span>
+                                            <span>Picante</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item fade-in">
+                                    <div class="menu-img">
+                                        <img src="assets/img/pizza-Quatro-Queijos.jpg" alt="Quattro Formaggi">
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4>Quattro Formaggi</h4>
+                                            <span class="price">R$ 58,90</span>
+                                        </div>
+                                        <p>Molho de tomate, mussarela, gorgonzola, parmesão e provolone.</p>
+                                        <div class="menu-tags">
+                                            <span>Tradicional</span>
+                                            <span>Vegetariana</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item fade-in">
+                                    <div class="menu-img">
+                                        <img src="assets/img/pizza-Portuguesa.jpg" alt="Prosciutto">
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4>Prosciutto</h4>
+                                            <span class="price">R$ 62,90</span>
+                                        </div>
+                                        <p>Molho de tomate, mussarela, presunto de Parma, rúcula e parmesão.</p>
+                                        <div class="menu-tags">
+                                            <span>Gourmet</span>
+                                            <span>Premium</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item fade-in">
+                                    <div class="menu-img">
+                                        <img src="assets/img/pizza-vegetariana.jpg" alt="Caprese">
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4>Caprese</h4>
+                                            <span class="price">R$ 54,90</span>
+                                        </div>
+                                        <p>Molho de tomate, mussarela de búfala, tomate cereja, manjericão e pesto.</p>
+                                        <div class="menu-tags">
+                                            <span>Vegetariana</span>
+                                            <span>Fresca</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item fade-in">
+                                    <div class="menu-img">
+                                        <img src="assets/img/pizza-Calabresa.jpg" alt="Calabresa">
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4>Calabresa</h4>
+                                            <span class="price">R$ 49,90</span>
+                                        </div>
+                                        <p>Molho de tomate, mussarela, calabresa fatiada, cebola e orégano.</p>
+                                        <div class="menu-tags">
+                                            <span>Brasileira</span>
+                                            <span>Popular</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="entradas" role="tabpanel" aria-labelledby="entradas-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item fade-in">
+                                    <div class="menu-img">
+                                        <img src="assets/img/Bruschetta.png" alt="Bruschetta">
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4>Bruschetta</h4>
+                                            <span class="price">R$ 28,90</span>
+                                        </div>
+                                        <p>Fatias de pão italiano com tomate, manjericão, alho e azeite extra virgem.</p>
+                                        <div class="menu-tags">
+                                            <span>Clássica</span>
+                                            <span>Vegetariana</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item fade-in">
+                                    <div class="menu-img">
+                                        <img src="assets/img/Antipasto-Italiano.png" alt="Antipasto">
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4>Antipasto Italiano</h4>
+                                            <span class="price">R$ 65,90</span>
+                                        </div>
+                                        <p>Seleção de queijos, frios, azeitonas, tomates secos e pão italiano.</p>
+                                        <div class="menu-tags">
+                                            <span>Para compartilhar</span>
+                                            <span>Premium</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item fade-in">
+                                    <div class="menu-img">
+                                        <img src="assets/img/Carpaccio.png" alt="Carpaccio">
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4>Carpaccio</h4>
+                                            <span class="price">R$ 42,90</span>
+                                        </div>
+                                        <p>Fatias finas de carne com rúcula, parmesão, alcaparras e azeite trufado.</p>
+                                        <div class="menu-tags">
+                                            <span>Gourmet</span>
+                                            <span>Tradicional</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="bebidas" role="tabpanel" aria-labelledby="bebidas-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item fade-in">
+                                    <div class="menu-img">
+                                        <img src="assets/img/Vinho-Tinto Italiano.png" alt="Vinho Tinto">
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4>Vinho Tinto Italiano</h4>
+                                            <span class="price">R$ 89,90</span>
+                                        </div>
+                                        <p>Garrafa de vinho tinto italiano selecionado para acompanhar nossas pizzas.</p>
+                                        <div class="menu-tags">
+                                            <span>Importado</span>
+                                            <span>Alcoólico</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item fade-in">
+                                    <div class="menu-img">
+                                        <img src="assets/img/Refrigerantes.png" alt="Refrigerante">
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4>Refrigerantes</h4>
+                                            <span class="price">R$ 7,90</span>
+                                        </div>
+                                        <p>Lata 350ml - Coca-Cola, Guaraná, Sprite, Fanta ou Soda.</p>
+                                        <div class="menu-tags">
+                                            <span>Refrescante</span>
+                                            <span>Gelado</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item fade-in">
+                                    <div class="menu-img">
+                                        <img src="assets/img/agua-mineral.jpeg" alt="Água">
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4>Água</h4>
+                                            <span class="price">R$ 5,90</span>
+                                        </div>
+                                        <p>Água mineral com ou sem gás - 500ml.</p>
+                                        <div class="menu-tags">
+                                            <span>Essencial</span>
+                                            <span>Natural</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="sobremesas" role="tabpanel" aria-labelledby="sobremesas-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item fade-in">
+                                    <div class="menu-img">
+                                        <img src="assets/img/Tiramisu.png" alt="Tiramisu">
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4>Tiramisu</h4>
+                                            <span class="price">R$ 24,90</span>
+                                        </div>
+                                        <p>Clássica sobremesa italiana com biscoitos, café, mascarpone e cacau.</p>
+                                        <div class="menu-tags">
+                                            <span>Tradicional</span>
+                                            <span>Favorito</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item fade-in">
+                                    <div class="menu-img">
+                                        <img src="assets/img/Cannoli.png" alt="Cannoli">
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4>Cannoli</h4>
+                                            <span class="price">R$ 18,90</span>
+                                        </div>
+                                        <p>Massa crocante recheada com creme de ricota, chocolate e pistache.</p>
+                                        <div class="menu-tags">
+                                            <span>Siciliano</span>
+                                            <span>Doce</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item fade-in">
+                                    <div class="menu-img">
+                                        <img src="assets/img/Panna-Cotta.png" alt="Panna Cotta">
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4>Panna Cotta</h4>
+                                            <span class="price">R$ 22,90</span>
+                                        </div>
+                                        <p>Creme de baunilha com calda de frutas vermelhas.</p>
+                                        <div class="menu-tags">
+                                            <span>Cremoso</span>
+                                            <span>Refrescante</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="special-offer mt-5 fade-in">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <h3>Terça de Promoção!</h3>
+                            <p>Todas as terças-feiras, pizzas grandes tradicionais com 30% de desconto. Aproveite nossa promoção especial por tempo limitado!</p>
+        
+                            <div class="countdown">
+                                <div class="countdown-item">
+                                    <div class="countdown-number" id="countdown-days">00</div>
+                                    <div class="countdown-label">Dias</div>
+                                </div>
+                                <div class="countdown-item">
+                                    <div class="countdown-number" id="countdown-hours">00</div>
+                                    <div class="countdown-label">Horas</div>
+                                </div>
+                                <div class="countdown-item">
+                                    <div class="countdown-number" id="countdown-minutes">00</div>
+                                    <div class="countdown-label">Minutos</div>
+                                </div>
+                                <div class="countdown-item">
+                                    <div class="countdown-number" id="countdown-seconds">00</div>
+                                    <div class="countdown-label">Segundos</div>
+                                </div>
+                            </div>
+
+                            <div class="price mt-3">
+                                <span class="original-price">R$ 49,90</span>
+                                <span class="discounted-price">R$ 34,93</span>
+
+                            </div>
+        
+                            <a href="#order" class="btn btn-custom">Peça Já!</a>
+                        </div>
+                        <div class="col-lg-5 mt-4 mt-lg-0">
+                            <img src="assets/img/pizza-Calabresa.jpg" alt="Promoção Especial" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Ingredients Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Ingredientes de Qualidade</h2>
+                </div>
+        
+                <div class="ingredients-list">
+                    <div class="ingredient-item fade-in">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-cheese"></i>
+                        </div>
+                        <h5>Queijos Importados</h5>
+                    </div>
+                    <div class="ingredient-item fade-in">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h5>Manjericão Fresco</h5>
+                    </div>
+                    <div class="ingredient-item fade-in">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-wheat-awn"></i>
+                        </div>
+                        <h5>Farinha Italiana</h5>
+                    </div>
+                    <div class="ingredient-item fade-in">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h5>Azeite Extra Virgem</h5>
+                    </div>
+                    <div class="ingredient-item fade-in">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-apple-whole"></i>
+                        </div>
+                        <h5>Tomates Orgânicos</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial Section -->
+        <section id="testimonials" class="testimonial-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>O Que Nossos Clientes Dizem</h2>
+                </div>
+        
+                <div class="row">
+                    <div class="col-12">
+                        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="testimonial-item">
+                                                <div class="testimonial-img">
+                                                    <img src="assets/img/genphoto.jpg" alt="Cliente 1">
+                                                </div>
+                                                <h4>Ana Silva</h4>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <p>"A melhor pizza que já comi! A massa é perfeita e os ingredientes são sempre frescos. O atendimento também é excelente!"</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="testimonial-item">
+                                                <div class="testimonial-img">
+                                                    <img src="assets/img/genphoto.jpg" alt="Cliente 2">
+                                                </div>
+                                                <h4>Carlos Mendes</h4>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <p>"Incrível! Realmente me senti na Itália ao provar a pizza Margherita. O ambiente é muito aconchegante e o serviço é impecável."</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="testimonial-item">
+                                                <div class="testimonial-img">
+                                                    <img src="assets/img/genphoto.jpg"  alt="Cliente 3">
+                                                </div>
+                                                <h4>Patrícia Oliveira</h4>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p>"As pizzas são divinas! O Tiramisu de sobremesa é um complemento perfeito. Recomendo a todos que desejam experimentar uma autêntica pizza italiana."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="testimonial-item">
+                                                <div class="testimonial-img">
+                                                    <img src="assets/img/genphoto.jpg" alt="Cliente 4">
+                                                </div>
+                                                <h4>Roberto Almeida</h4>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <p>"Nunca provei uma pizza tão autêntica no Brasil! Morei na Itália por 5 anos e posso garantir que a Pizza Itália mantém o verdadeiro sabor italiano."</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="testimonial-item">
+                                                <div class="testimonial-img">
+                                                    <img src="assets/img/genphoto.jpg" alt="Cliente 5">
+                                                </div>
+                                                <h4>Juliana Costa</h4>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <p>"Ambiente aconchegante, atendimento impecável e comida divina. A pizza Quattro Formaggi é sensacional! Já virou ponto de encontro com os amigos."</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="testimonial-item">
+                                                <div class="testimonial-img">
+                                                    <img src="assets/img/genphoto.jpg"  alt="Cliente 6">
+                                                </div>
+                                                <h4>Marcos Santos</h4>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <p>"O delivery é rápido e a pizza chega quentinha e intacta. A qualidade é a mesma de quando como no restaurante. Simplesmente a melhor da cidade!"</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Entre em Contato</h2>
+                </div>
+        
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="contact-info">
+                            <div class="contact-info-item fade-in">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Localização</h5>
+                                    <p> R.Exemplo, 123 - Centro, São Paulo - Sp, 1234-1234</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item fade-in">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Telefone</h5>
+                                    <p>(11) 1234 1234</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item fade-in">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Email</h5>
+                                    <p>contato@pizzaitalia.com.br</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item fade-in">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Horário de Funcionamento</h5>
+                                    <p>Terça a Domingo: 18h às 00h</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="social-links mt-4 fade-in">
+                            <h5 class="mb-3">Siga-nos nas Redes Sociais</h5>
+                            <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <form class="contact-form fade-in" id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Nome" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <input type="text" placeholder="Assunto">
+                            <textarea placeholder="Mensagem" required></textarea>
+                            <button type="submit" class="btn btn-custom">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+        
+                <div class="row mt-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15901105.80124882!2d-45.9855579890625!3d-13.343687577183703!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1745789489672!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- Order Section -->
+        <section id="order" class="py-5">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Peça Online</h2>
+                </div>
+        
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center fade-in">
+                        <p class="mb-4">Faça seu pedido online e receba em casa ou retire em nossa loja. Entrega rápida e segura para toda a cidade.</p>
+                        <a href="#" class="btn btn-custom me-3">Delivery</a>
+                        <a href="#" class="btn btn-outline-danger">Retirada</a>
+        
+                        <div class="delivery-apps mt-5">
+                            <h5 class="mb-3">Ou peça pelos aplicativos</h5>
+                            <div class="row justify-content-center">
+                                <div class="col-md-3 col-6 mb-3">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <i class="fas fa-mobile-alt fa-2x mb-2" style="color: var(--primary-color);"></i>
+                                                <p class="mb-0">iFood</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6 mb-3">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <i class="fas fa-motorcycle fa-2x mb-2" style="color: var(--primary-color);"></i>
+                                                <p class="mb-0">Uber Eats</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6 mb-3">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <i class="fas fa-shopping-bag fa-2x mb-2" style="color: var(--primary-color);"></i>
+                                                <p class="mb-0">Rappi</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 col-6 mb-3">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <i class="fas fa-phone fa-2x mb-2" style="color: var(--primary-color);"></i>
+                                                <p class="mb-0">WhatsApp</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center fade-in">
+                        <h3 class="mb-4">Receba Nossas Promoções</h3>
+                        <p class="mb-4">Inscreva-se em nossa newsletter e receba ofertas exclusivas, novidades do cardápio e cupons de desconto.</p>
+                        <form class="newsletter-form d-flex justify-content-center">
+                            <input type="email" placeholder="Seu email" class="form-control me-2" style="max-width: 300px;">
+                            <button type="submit" class="btn btn-custom">Inscrever</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-logo">
+                        <img src="assets/img/Logo.png" alt="Pizza Itália Logo">
+                    </div>
+                    <p class="footer-text">Trazendo a autêntica experiência italiana para sua mesa desde 1995. Nossas pizzas são preparadas com ingredientes selecionados e técnicas tradicionais.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Links Rápidos</h5>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h5>Nossos Serviços</h5>
+                        <ul>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Retirada</a></li>
+                            <li><a href="#">Eventos</a></li>
+                            <li><a href="#">Catering</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-links">
+                        <h5>Contato</h5>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt me-2"></i> R.Exemplo, 123 - Centro, São Paulo - Sp, 1234-1234</li>
+                            <li><i class="fas fa-phone me-2"></i> (11) 1234 1234</li>
+                            <li><i class="fas fa-envelope me-2"></i> contato@pizzaitalia.com.br</li>
+                            <li><i class="fas fa-clock me-2"></i> Ter-Dom: 18h às 00h</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pizza Italiana - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="./js/script.js">
+
+
+    </script>
+</body>
+</html>
