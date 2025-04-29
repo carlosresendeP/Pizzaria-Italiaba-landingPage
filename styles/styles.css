@@ -88,7 +88,7 @@ body {
     top: 0;
     z-index: -1;
 }
-.hero .hero-bg video{
+.hero .hero-bg img{
     width: 100vw;
     object-fit: contain;
     opacity: 1;
@@ -226,6 +226,7 @@ body {
 .menu-section {
     padding: 100px 0;
     background-color: white;
+    
 }
 .menu-section .nav-link{
     color: var(--dark-color);
