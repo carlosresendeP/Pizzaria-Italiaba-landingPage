@@ -197,6 +197,14 @@ body {
 .about-section {
     padding: 100px 0;
     background-color: var(--light-color);
+    height: 100%;
+}
+.about-section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
 }
 
 .about-img {
@@ -228,6 +236,15 @@ body {
     background-color: white;
     
 }
+.menu-section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+}
+
 .menu-section .nav-link{
     color: var(--dark-color);
     position: relative;
@@ -314,6 +331,15 @@ body {
 .testimonial-section {
     padding: 100px 0;
     background-color: var(--light-color);
+}
+
+.testimonial-section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    gap: 30px;
 }
 
 .testimonial-item {
@@ -564,6 +590,26 @@ footer {
     .section-title h2 {
         font-size: 1.8rem;
     }
+
+    .hero .hero-bg{
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.hero .hero-bg img{
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+
+}
+
+.testimonial-item{
+    margin-top: 30px;
+}
+
 }
 
 #menuCarousel .carousel-control-prev,
